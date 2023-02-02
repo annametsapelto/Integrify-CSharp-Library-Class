@@ -5,13 +5,15 @@ public class Book : Loanable
     public int PageCount {get; init;}
     public string Publisher {get; init;}
 
-    public Book (string title, int year, int code, Author[] authors, int pages, string publisher) :base (title, year, code) 
+    public Book (string title, int year, int code, Author[] authors, int pages, string publisher, Category category, bool reservations) 
+    :base (title, year, code, category, reservations) 
     {
         this.Authors = authors;
         this.PageCount = pages;
         this.Publisher = publisher;
     }
-        public Book (string title, int year, int code, Author[] authors, int pages, string publisher, string translator) :base (title, year, code) 
+        public Book (string title, int year, int code, Author[] authors, int pages, string publisher, string translator, Category category, bool reservations) 
+        :base (title, year, code, category, reservations) 
     {
         this.Authors = authors;
         this.PageCount = pages;
