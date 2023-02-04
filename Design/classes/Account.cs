@@ -22,4 +22,26 @@ public class Account
         this.Reservations = reservation;
         this.Password = _password;
     }
+
+    public void DisableAccount(OverduePayment Overdues)
+    {
+        if (this.CardActive)
+        {
+            if (Overdues.CountTotal(Overdues.Payments) > Overdues.MaxPayment)
+            {
+                this.CardActive = false;
+            }
+        }
+     }
+
+    public void EnableAccount(OverduePayment Overdues)
+    {
+        if (!this.CardActive)
+        {
+            if (Overdues.CountTotal(Overdues.Payments) < Overdues.MaxPayment)
+            {
+                this.CardActive = true;
+            }
+        }
+    }
 }
