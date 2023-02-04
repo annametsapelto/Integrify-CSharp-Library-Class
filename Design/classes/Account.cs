@@ -2,6 +2,7 @@ public class Account
 {
     public User Owner {get; init;}
     public int CardNumber {get; set;}
+    public string Password {get; set;}
     public OverduePayment Overdue {get; set;}
     public bool CardActive {get; set;} = true;
     public Loan[] LoanHistory {get; set;}
@@ -9,7 +10,7 @@ public class Account
     public Reservation[] Reservations {get; set;}
     public Loanable[] LostLoanables {get; set;}
 
-    public Account(User _owner, string _first, string _last, Address _address, bool _active, string _socialSecurityNumber, int _cardNumber, OverduePayment _overdue, string _email, Loan[] _history, Loan[] current, Loanable[] lost, Reservation[] reservation)
+    public Account(User _owner, string _first, string _last, Address _address, bool _active, string _socialSecurityNumber, int _cardNumber, OverduePayment _overdue, string _email, Loan[] _history, Loan[] current, Loanable[] lost, Reservation[] reservation, string _password)
     {
         this.Owner = _owner;
         this.Overdue = _overdue;
@@ -19,5 +20,6 @@ public class Account
         this.CurrentLoans = current;
         this.LostLoanables = lost;
         this.Reservations = reservation;
+        this.Password = _password;
     }
 }

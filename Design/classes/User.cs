@@ -14,4 +14,9 @@ public class User
         this.SocialSecurityNumber = _socialSecurityNumber;
         this.Email = _email;
     }
+    public string GetFullName()
+    {
+        string FullName = this.LastName + ", " + this.FirstName;
+        return FullName;
+    }
 }

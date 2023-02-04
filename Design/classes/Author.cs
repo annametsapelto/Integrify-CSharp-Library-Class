@@ -18,4 +18,9 @@ public class Author
         this.Publications = pub;
         this.Biography = bio;
     }
+    public string GetAuthorFullName()
+    {
+        string FullName = this.LastName + ", " + this.FirstName;
+        return FullName;
+    }
 }
