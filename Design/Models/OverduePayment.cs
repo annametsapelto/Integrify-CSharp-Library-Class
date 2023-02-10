@@ -1,5 +1,8 @@
+namespace Models;
+
 public class OverduePayment
 {
+    public int Id;
     public double[] Payments {get; set;}
     public double MaxPayment {get; set;} = 10;
 

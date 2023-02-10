@@ -1,5 +1,8 @@
+namespace Models;
+
 public class Magazine: Loanable
 {
+    public int Id;
     public string IssueNumber {get; init;}
     public string Editor {get; init;}
     public Magazine(string issue, string editor, string title, int year, int code, Category category, bool reservations, Availability status)

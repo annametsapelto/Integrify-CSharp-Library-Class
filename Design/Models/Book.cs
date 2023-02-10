@@ -1,5 +1,8 @@
+namespace Models;
+
 public class Book : Loanable
 {
+    public int Id;
     public Author[] Authors {get; init;}
     public string? Translator {get; init;}
     public int PageCount {get; init;}

@@ -1,3 +1,5 @@
+namespace Models;
+
 public abstract class Loanable
 {
     public string Title {get; init;}

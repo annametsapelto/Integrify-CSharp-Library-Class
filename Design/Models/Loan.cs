@@ -1,3 +1,5 @@
+namespace Models;
+
 public class Loan 
 {
     public Loanable LoanedItem {get; init;}

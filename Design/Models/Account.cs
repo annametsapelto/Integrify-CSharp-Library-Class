@@ -1,5 +1,8 @@
+namespace Models;
+
 public class Account 
 {
+    public int Id;
     public User Owner {get; init;}
     public int CardNumber {get; set;}
     public string Password {get; set;}

@@ -1,9 +1,12 @@
+namespace Models;
+
 public class Author 
 {
-    public string FirstName;
-    public string LastName;
-    public Book[] Publications;
-    public string? Biography;
+    public int Id;
+    public string FirstName {set; get;}
+    public string LastName {set; get;}
+    public Book[] Publications {set; get;}
+    public string? Biography {set; get;}
 
     public Author(string first, string last, Book[] pub)
     {

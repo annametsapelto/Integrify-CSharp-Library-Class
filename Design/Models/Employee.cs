@@ -1,5 +1,8 @@
+namespace Models;
+
 public class Employee : User
 {
+    public int Id;
     private string _accessCode {get; init;}
     private string _password {get; set;}
     public Employee(string _first, string _last, Address _address, string _socialSecurityNumber, string _email, string _access, string _pass)
