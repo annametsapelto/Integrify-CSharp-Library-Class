@@ -2,9 +2,10 @@ namespace Models;
 
 public class Loan 
 {
-    public Loanable LoanedItem {get; init;}
-    public DateTime LoanDate {get; init;}
-    public DateTime DueDate {get; set;}
+    public int Id { get; set; }
+    public Loanable LoanedItem { get; init; }
+    public DateTime LoanDate { get; init; }
+    public DateTime DueDate { get; set; }
 
     public Loan (Loanable loaned, DateTime loanDate, DateTime duedate)
     {

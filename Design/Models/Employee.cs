@@ -2,13 +2,13 @@ namespace Models;
 
 public class Employee : User
 {
-    public int Id;
-    private string _accessCode {get; init;}
-    private string _password {get; set;}
-    public Employee(string _first, string _last, Address _address, string _socialSecurityNumber, string _email, string _access, string _pass)
-    : base(_first, _last, _address, _socialSecurityNumber, _email)
+    public int Id { get; set; }
+    private string _accessCode { get; init; }
+    private string _password { get; set; }
+    public Employee(string first, string last, Address address, string socialSecurityNumber, string email, string access, string pass)
+    : base(first, last, address, socialSecurityNumber, email)
     {
-        this._accessCode = _access;
-        this._password = _pass;
+        this._accessCode = access;
+        this._password = pass;
     }
 }

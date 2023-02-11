@@ -2,14 +2,14 @@ namespace Models;
 
 public class OverduePayment
 {
-    public int Id;
-    public double[] Payments {get; set;}
-    public double MaxPayment {get; set;} = 10;
+    public int Id { get; set; }
+    public double[] Payments { get; set; }
+    public double MaxPayment { get; set; } = 10;
 
-    public OverduePayment(double[] _payment, double _total, double _max)
+    public OverduePayment(double[] payment, double max)
     {
-        this.Payments = _payment;
-        this.MaxPayment = _max;
+        this.Payments = payment;
+        this.MaxPayment = max;
     }
 
     public double CountTotal(double[] Payments) {
