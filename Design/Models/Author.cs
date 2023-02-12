@@ -8,8 +8,11 @@ public class Author
     public Book[] Publications { set; get; }
     public string? Biography { set; get; }
 
-    public Author(string first, string last, Book[] pub)
+    public Author() {}
+
+    public Author(int id, string first, string last, Book[] pub)
     {
+        this.Id = id;
         this.FirstName = first;
         this.LastName = last;
         this.Publications = pub;
