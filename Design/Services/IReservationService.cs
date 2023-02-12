@@ -1,9 +1,9 @@
-namespace Repositories;
+namespace Services;
 
 using Models;
 using DTOs;
 
-public interface IReservationRepository
+public interface IReservationService
 {
     Task<Reservation> CreateReservationAsync(ReservationDTO request);
 
@@ -14,4 +14,8 @@ public interface IReservationRepository
     Task<Reservation> GetReservationAsync(int id);
 
     Task<ICollection<Reservation>> GetAllReservationsAsync();
+    Task<ICollection<Reservation>> GetReservationsByCategoryAsync(int categoryId);
+    Task<ICollection<Reservation>> GetReservationsByAuthorAsync(int authorId);
+    Task<ICollection<Reservation>> GetReservationsByAvailabilityAsync(Availability status);
+
 }

@@ -1,9 +1,9 @@
-namespace Repositories;
+namespace Services;
 
 using Models;
 using DTOs;
 
-public interface IOverduePaymentRepository
+public interface IOverduePaymentService
 {
     Task<OverduePayment> CreateOverduePaymentAsync(OverduePaymentDTO request);
 

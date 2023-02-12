@@ -1,9 +1,9 @@
-namespace Repositories;
+namespace Services;
 
 using Models;
 using DTOs;
 
-public interface IAccountRepository
+public interface IAccountService
 {
     Task<Account> CreateAccountAsync(AccountDTO request);
 
@@ -14,4 +14,8 @@ public interface IAccountRepository
     Task<Account> GetAccountAsync(int id);
 
     Task<ICollection<Account>> GetAllAccountsAsync();
+    Task<ICollection<Account>> GetActiveAccounts();
+    Task<ICollection<Account>> GetAccountsWithLoans();
+    Task<ICollection<Account>> GetAccountsWithReservations();
+
 }

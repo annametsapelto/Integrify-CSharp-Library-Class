@@ -1,9 +1,9 @@
-namespace Repositories;
+namespace Services;
 
 using Models;
 using DTOs;
 
-public interface IAuthorRepository
+public interface IAuthorService
 {
     Task<Author> CreateAuthorAsync(AuthorDTO request);
 

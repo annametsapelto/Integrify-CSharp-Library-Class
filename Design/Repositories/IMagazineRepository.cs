@@ -5,13 +5,13 @@ using DTOs;
 
 public interface IMagazineRepository
 {
-    Task<Magazine> CreateMagazine(MagazineDTO request);
+    Task<Magazine> CreateMagazineAsync(MagazineDTO request);
 
-    Task<Magazine> UpdateMagazine(int id, MagazineDTO request);
+    Task<Magazine> UpdateMagazineAsync(int id, MagazineDTO request);
 
-    Task<bool> DeleteMagazine(int id);
+    Task<bool> DeleteMagazineAsync(int id);
 
-    Task<Magazine> GetMagazine(int id);
+    Task<Magazine> GetMagazineAsync(int id);
 
-    Task<ICollection<Magazine>> GetAllMagazines();
+    Task<ICollection<Magazine>> GetAllMagazinesAsync();
 }

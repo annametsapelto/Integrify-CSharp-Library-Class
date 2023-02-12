@@ -1,9 +1,9 @@
-namespace Repositories;
+namespace Services;
 
 using Models;
 using DTOs;
 
-public interface IAddressRepository
+public interface IAddressService
 {
     Task<Address> CreateAddressAsync(AddressDTO request);
 
@@ -14,4 +14,6 @@ public interface IAddressRepository
     Task<Address> GetAddressAsync(int id);
 
     Task<ICollection<Address>> GetAllAddressesAsync();
+    Task<ICollection<Address>> GetAddressesInAreaAsync(string zip);
+    Task<ICollection<Address>> GetAllAddressesInCountryAsync(string country);
 }

@@ -1,9 +1,9 @@
-namespace Repositories;
+namespace Services;
 
 using Models;
 using DTOs;
 
-public interface ICategoryRepository
+public interface ICategoryService
 {
     Task<Category> CreateCategoryAsync(CategoryDTO request);
 

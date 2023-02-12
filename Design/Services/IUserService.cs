@@ -1,9 +1,9 @@
-namespace Repositories;
+namespace Services;
 
 using Models;
 using DTOs;
 
-public interface IUserRepository
+public interface IUserService
 {
     Task<User> CreateUserAsync(UserDTO request);
 

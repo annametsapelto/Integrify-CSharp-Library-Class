@@ -1,9 +1,9 @@
-namespace Repositories;
+namespace Services;
 
 using Models;
 using DTOs;
 
-public interface IEmployeeRepository
+public interface IEmployeeService
 {
     Task<Employee> CreateEmployeeAsync(EmployeeDTO request);
 

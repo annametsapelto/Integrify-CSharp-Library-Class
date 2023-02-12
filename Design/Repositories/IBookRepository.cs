@@ -5,13 +5,13 @@ using DTOs;
 
 public interface IBookRepository
 {
-    Task<Book> CreateBook(BookDTO request);
+    Task<Book> CreateBookAsync(BookDTO request);
 
-    Task<Book> UpdateBook(int id, BookDTO request);
+    Task<Book> UpdateBookAsync(int id, BookDTO request);
 
-    Task<bool> DeleteBook(int id);
+    Task<bool> DeleteBookAsync(int id);
 
-    Task<Book> GetBook(int id);
+    Task<Book> GetBookAsync(int id);
 
-    Task<ICollection<Book>> GetAllBooks();
+    Task<ICollection<Book>> GetAllBooksAsync();
 }
