@@ -14,8 +14,8 @@ public interface IAccountService
     Task<Account> GetAccountAsync(int id);
 
     Task<ICollection<Account>> GetAllAccountsAsync();
-    Task<ICollection<Account>> GetActiveAccounts();
-    Task<ICollection<Account>> GetAccountsWithLoans();
-    Task<ICollection<Account>> GetAccountsWithReservations();
+    Task<ICollection<Account>> GetActiveAccountsAsync();
+    Task<ICollection<Account>> GetAccountsWithLoansAsync();
+    Task<ICollection<Account>> GetAccountsWithReservationsAsync();
 
 }
