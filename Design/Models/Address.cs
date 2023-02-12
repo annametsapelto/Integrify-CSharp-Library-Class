@@ -8,8 +8,11 @@ public class Address
     public string City { get; set; }
     public string Country { get; set; } = "Finland";
 
-    public Address(string street, string zip, string city, string country) 
+    public Address() {}
+
+    public Address(int id, string street, string zip, string city, string country) 
     {
+        this.Id = id;
         this.StreetAddress = street;
         this.ZipCode = zip;
         this.City = city;

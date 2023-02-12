@@ -13,7 +13,10 @@ public class Account
     public Reservation[] Reservations { get; set; }
     public Loanable[] LostLoanables { get; set; }
 
+    public Account(){}
+    
     public Account(
+        int id,
         User owner, 
         bool active, 
         int cardNumber, 
@@ -25,6 +28,7 @@ public class Account
         reservation, 
         string password)
     {
+        this.Id = id;
         this.Owner = owner;
         this.Overdue = overdue;
         this.CardNumber = cardNumber;

@@ -7,8 +7,9 @@ public class Loan
     public DateTime LoanDate { get; init; }
     public DateTime DueDate { get; set; }
 
-    public Loan (Loanable loaned, DateTime loanDate, DateTime duedate)
+    public Loan (int id, Loanable loaned, DateTime loanDate, DateTime duedate)
     {
+        this.Id = id;
         this.LoanedItem = loaned;
         this.LoanDate = loanDate;
         this.DueDate = duedate;

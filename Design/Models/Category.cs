@@ -6,8 +6,9 @@ public class Category
     public double CategoryNumber { get; init; }
     public string CategoryName { get; init; }
 
-    public Category(double number, string name)
+    public Category(int id, double number, string name)
     {
+        this.Id = id;
         this.CategoryName = name;
         this.CategoryNumber = number;
     }
