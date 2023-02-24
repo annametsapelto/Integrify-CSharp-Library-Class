@@ -4,10 +4,10 @@ public class OverduePayment
 {
     public int Id { get; set; }
     public Account Account {get; init;}
-    public double[] Payments { get; set; }
+    public IList<double> Payments { get; set; }
     public double MaxPayment { get; set; } = 10;
 
-    public OverduePayment(int id, Account account, double[] payment, double max)
+    public OverduePayment(int id, Account account, IList<double> payment, double max)
     {
         this.Id = id;
         this.Account = account;

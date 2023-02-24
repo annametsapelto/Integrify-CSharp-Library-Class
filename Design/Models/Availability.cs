@@ -2,9 +2,9 @@ namespace Models;
 
 public enum Availability
 {
-    AVAILABLE,
-    LOANED,
-    MISSING,
-    IN_RESERVED,
-    IN_STORAGE
+    available,
+    loaned,
+    missing,
+    in_reservations,
+    in_storage
 }

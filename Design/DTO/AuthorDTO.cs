@@ -10,7 +10,7 @@ public class AuthorDTO
     [Required]
     public string LastName { set; get; }
     [Required]
-    public Book[] Publications { set; get; }
+    public IList<Book> Publications { set; get; }
     public string? Biography { set; get; }
 
 }

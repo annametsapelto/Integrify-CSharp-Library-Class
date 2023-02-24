@@ -8,6 +8,6 @@ public class OverduePaymentDTO
     [Required]
     public Account Account {get; init;}
     [Required]
-    public double[] Payments { get; set; }
-    public double MaxPayment { get; set; } = 10;
+    public IList<double> Payments { get; set; }
+    public double MaxPayment { get; set; } = 10.0;
 }

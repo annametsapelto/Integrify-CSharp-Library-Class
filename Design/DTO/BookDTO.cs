@@ -6,7 +6,7 @@ using Models;
 public class BookDTO : LoanableDTO
 {
     [Required]
-    public Author[] Authors { get; init; }
+    public IList<Author> Authors { get; init; }
     public string? Translator { get; init; }
     public int PageCount { get; init; }
     [Required]

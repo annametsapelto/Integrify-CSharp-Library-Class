@@ -13,8 +13,8 @@ public class AccountDTO
     public string Password { get; set; }
     public OverduePayment? Overdue { get; set; }
     public bool CardActive { get; set; } = true;
-    public Loan[]? LoanHistory { get; set; }
-    public Loan[]? CurrentLoans { get; set; }
-    public Reservation[]? Reservations { get; set; }
-    public Loanable[]? LostLoanables { get; set; }
+    public IList<Loan>? LoanHistory { get; set; }
+    public IList<Loan>? CurrentLoans { get; set; }
+    public IList<Reservation>? Reservations { get; set; }
+    public IList<Loanable>? LostLoanables { get; set; }
 }
