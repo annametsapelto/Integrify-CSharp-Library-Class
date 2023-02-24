@@ -15,9 +15,9 @@ public class OverduePayment
         this.MaxPayment = max;
     }
 
-    public double CountTotal(double[] Payments) {
+    public double CountTotal(IList<double> Payments) {
         double Counted = 0.0;
-        for (int i = 0; i<Payments.Length; i++)
+        for (int i = 0; i<Payments.Count(); i++)
         {
             Counted = Counted + Payments[i];
         }
